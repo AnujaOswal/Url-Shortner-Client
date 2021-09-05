@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.25s all ease-in-out;
+}
+
+body {
+  background-color: #534d7e;
+  height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* Navbar on Top */
+.navbar {
+  background-color: #e2e2e2;
+  display: flex;
+  padding: 1rem;
+}
+
+.header {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  flex: 100%;
+  font-size: 1.5rem;
+  font-family: "Major Mono Display", monospace;
+  color: #4a446e;
+}
+.navbar ul {
+  flex: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar li {
+  border-left: 1px solid #60578b;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a446e;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: #1a1633;
+  text-decoration: underline;
+}
+/* Short URL Generate form */
+.generateForm {
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.generateForm p {
+  color: #e2e2e2;
+  font-size: 3rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.generateForm form {
+  border: 1px solid #e2e2e252;
+  width: 60%;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.generateForm input {
+  font-size: 1.2rem;
+  border: none;
+  color: #e2e2e2;
+}
+
+.generateForm input[type="text"],
+input[type="password"] {
+  width: 100%;
+  outline: none;
+  background: none;
+  color: #e2e2e2;
+  font-weight: 400;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.generateForm input[type="submit"] {
+  padding: 1rem;
+  color: #1a1633;
+  background-color: #e2e2e2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.generateForm input[type="submit"]:hover {
+  color: #e2e2e2;
+  background-color: #1a1633;
+  border: 1px solid #e2e2e252;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.form-icon {
+  color: #e2e2e2;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+.uline {
+}
+/* Login Form */
+.login form {
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.login .back {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.login input[type="submit"] {
+  width: 30%;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.login .message {
+  font-size: 0.9rem;
+  color: #e2e2e2;
+  text-align: left;
+  padding: 0.5rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* Footer */
+.footer,
+.header {
+  background-color: #e2e2e2;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a446e;
+  font-size: 0.9rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
