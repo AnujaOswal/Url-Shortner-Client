@@ -60,6 +60,29 @@ body {
   color: #1a1633;
   text-decoration: underline;
 }
+
+/* Middle alignment */
+.aligned {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Doucments count on Dashboard */
+.date {
+  color: #e2e2e2;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem;
+  border: 1.5px solid #e2e2e252;
+}
+
+.date span {
+  background-color: #4a446e;
+  padding: 0.5rem;
+}
 /* Short URL Generate form */
 .generateForm {
   flex-direction: column;
@@ -124,8 +147,7 @@ input[type="password"] {
   font-size: 1.3rem;
   margin-right: 1rem;
 }
-.uline {
-}
+
 /* Login Form */
 .login form {
   flex-direction: column;
@@ -153,6 +175,57 @@ input[type="password"] {
   color: #e2e2e2;
   text-align: left;
   padding: 0.5rem;
+}
+/* url shortner page css */
+.r-border {
+  border-right: 1px solid #7a70ac;
+}
+
+.b-border {
+  border-bottom: 1px solid #e2e2e250;
+  width: 100%;
+}
+
+/* Wrapping column data for long data in list of Urls */
+.longurl {
+  white-space: nowrap;
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.urlList {
+  margin: 3rem;
+}
+
+/* Row data */
+.row {
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e2e2e2;
+  padding: 0 1rem;
+  line-height: 3rem;
+  color: #60578b;
+}
+
+/* Column data */
+.col {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+.m-align {
+  text-align: center;
+}
+
+.s-width {
+  width: 300px;
+}
+
+.h-row {
+  background-color: #ada7cc69;
+  color: #e2e2e2;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

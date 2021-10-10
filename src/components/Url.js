@@ -42,7 +42,9 @@ export default function Url(props) {
             placeholder="Long URL"
             name="longurl"
             onChange={(ele) => props.setUrl(ele.target.value)}
+            
           />
+         
         </div>
 
         <input type="submit" value="Generate" />

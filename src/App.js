@@ -64,15 +64,18 @@ function App() {
     <Route exact path="/">
       <Login setLogin={setLogin} />
     </Route>
-
+ 
+    <Route path="/login">
+    <Login setLogin={setLogin} />
+    </Route>
     {/* User Registeration */}
     <Route path="/register">
       <Register />
     </Route>
 
-    {/* Generate URL Shortener Route */}
+    {/* Generate URL Shortener Route Dashboard */}
     <Route path="/urlshortener">
-          <UrlShortener
+          <Url
             handleSubmit={handleSubmit}
             setUrl={setUrl}
             urlData={urlData}
@@ -82,7 +85,7 @@ function App() {
 
         {/* List of URLs generated */}
         <Route path="/urls">
-          <Url urlData={urlData} handleSubmit={handleSubmit} login={login} />
+          <UrlShortener urlData={urlData} handleSubmit={handleSubmit} login={login} />
         </Route>
 
         {/* Logout */}

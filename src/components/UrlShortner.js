@@ -23,9 +23,9 @@ export default function UrlShortener(props) {
       {props.urlData.map((ele) => {
         return (
           <div key={ele._id} className="row">
-            <div className="ellip col r-border">{ele.longUrl}</div>
+            <div className="longurl col r-border">{ele.longUrl}</div>
 
-            <div className="col m-align r-border ellip s-width">
+            <div className="col m-align r-border longurl s-width">
               <a href={ele.shortUrl} target="_blank" rel="noreferrer">
                 {ele.urlCode}
               </a>
